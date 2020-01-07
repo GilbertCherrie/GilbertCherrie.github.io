@@ -1,0 +1,16 @@
+body, html {
+    background-color: lightblue;
+}
+
+h1 {
+    color: red;
+    font-size: 50px;
+}
+
+.blurb {
+    color: red;
+}
+
+.main {
+    padding: 10vw;
+}
