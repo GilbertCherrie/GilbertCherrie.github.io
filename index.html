@@ -1,68 +1,238 @@
 <!doctype html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <!-- Import CSS -->
     <link rel="stylesheet" href="style.css"/>
-    <!-- Insert icon -->
-    <link rel="icon" href="images/favicon.io"/>
-    <!-- Import font awesome -->
     <script src="https://kit.fontawesome.com/d245b2d381.js" crossorigin="anonymous"></script>   
-    <title>Student's Personal Website</title>
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-    <div class="container main">
-        <div class="row">
-            <!-- Content goes here -->
-            <h1>Gilbert Cherrie</h1>
-            <p class="blurb">I'm a second year software engineering student at McMaster University.</p>
-            <a href="https://www.linkedin.com/in/gilbert-cherrie-2a757b140/"><button type="button" class="btn btn-success">A</button></a>
-            <!-- Add Paragraphs, Links & Images etc. -->
-        </div>
-    </div>
-    <!-- Optional JavaScript -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</body>
+    <script src="index.js"></script>
+    <title>Gilbert Cherrie</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <a class="nav-link" href="#Education">Education</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <a class="nav-link" href="#Skills">Skills</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <a class="nav-link" href="#Experience">Experience</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <section class="main" id="home">
+
+      <div class="container name">
+          <h1>Gilbert Cherrie</h1>
+      </div>
+
+      <div class="container links">
+        <button onclick="location.href='https://www.linkedin.com/in/gilbert-cherrie-2a757b140/';" type="button" class="btn"><img src="Images/linkedin.png" alt="LinkedIn"></button>
+        <button onclick="location.href='https://github.com/GilbertCherrie';" type="button" class="btn"><img src="Images/github.png" alt="GitHub"></button>
+        <button onclick="location.href='Images/gilbertcherrie.pdf';" type="button" class="btn"><img src="Images/resume.png" alt="Resume"></button>
+      </div>
+
+      <div class="intro">
+        <p>
+          Hello and welcome to my website. I'm a motivated and hard working third year software engineering student at McMaster University. My passions include
+          software and sports. Continue reading to learn more about my education, personal projects and more.
+        </p>
+      </div>
+      <div id = "Education"></div>
+    </section>
+    
+    <section class="Education" id="education">
+
+      <div class="container title">
+        <h2>Education</h2>
+      </div>
+
+      <div class="container school">
+        <h3>McMaster University</h3>
+        <h3>Bachelor of Engineering - Software Engineering (Co-op)</h3>
+        <h4>2018 - 2022</h4>
+        <ul class="list-group" style="padding-bottom: 2vh;">
+          <b><li class="list-group-item">Achieved a cumulative grade-point average of
+            3.46 on a 4.0 scale</li>
+          <li class="list-group-item">Achieved the Dean’s Honour List</li>
+          <li class="list-group-item">Awarded the McMaster Entrance Scholarship
+            for a grade-point average of over 90% in high school</li></b>
+        </ul>
+        <button type="button" class="btn btn-dark" onclick="location.href='https://academiccalendars.romcmaster.ca/preview_program.php?catoid=38&poid=20610';"> Undergraduate Course Listing</button>
+      </div>
+      
+      <div class="container extra">
+        <h3>Extacurricular Activities</h3>
+        <ul class="list-group" style="padding-bottom: 2vh;">
+          <li class="list-group-item"><b>DeltaHacks 5 and 6 - McMaster University</b>: Collaborated with three other group members
+            to create a mobile app that attempted to solve a presented problem and attended various workshops to expand our
+            skillsets.</li>
+          <li class="list-group-item" id="Skills"> <b>McMaster iGem Dry Lab Coding Team 2018</b>: Worked in a team of 6 members to brainstorm
+            ideas of how to create simulated data based on wet lab tests and assisted in updating the teams Wiki page using
+            HTML and CSS.</li>
+          </ul> 
+        </div>
+    </section>
+
+    <section class="Skills" id="skills">
+
+      <div class="container title">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="skillList">
+      <div class="row">
+        <div class="col-4">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home"><b style="font-size: 1.5vw;">Coding Languages</b></a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-python" role="tab" aria-controls="settings">Python</a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-java" role="tab" aria-controls="settings">Java</a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-c" role="tab" aria-controls="settings">C</a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-sql" role="tab" aria-controls="settings">SQL</a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-html" role="tab" aria-controls="settings">HTML/CSS</a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-bash" role="tab" aria-controls="settings">Bash/Shell</a>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">These are all the programming languages I am comfortable with. Click through each language to learn about where I used each language.</div>
+            <div class="tab-pane fade" id="list-python" role="tabpanel" aria-labelledby="list-settings-list">
+              <p>Personal Project Uses:</p>
+              <li>NBA Player Efficiency Rating App - Retrieves all active player data, performs custom efficiency calculations and stores to server</li>
+              </p>
+              <p>Academic Project Uses:
+              <li>SFWR ENG 2AA4 - Implemented first half of assignments in Python using formal Software Design Documentations as the requirements</li>
+              </p>
+            </div>
+            <div class="tab-pane fade" id="list-java" role="tabpanel" aria-labelledby="list-settings-list">
+              <p>Academic Project Uses:
+              <li>SFWR ENG 2AA4 - Implemented second half of assignments in Java using formal Software Design Documentations as the requirements</li>
+              <li>SFWR ENG 2XX3 - Completed all labs, assignments and the final large scale app group project using Java. The group project involved building a Java app using large data sets, algorithmic computations and a GUI.</li>
+                </p>
+            </div>
+            <div class="tab-pane fade" id="list-c" role="tabpanel" aria-labelledby="list-settings-list">
+              <p>Academic Project Uses:
+                <li>SFWR ENG 2C03 - Implemented various assignments using C that involved image generation, image filtering, data set sorting and more</li>
+                  </p>
+            </div>
+            <div class="tab-pane fade" id="list-sql" role="tabpanel" aria-labelledby="list-settings-list">
+              <p>Personal Project Uses:</p>
+              <li>NBA Player Efficiency Rating App - Uses SQL to store and retrieve player statistics and data into a MySQL server</li>
+              </p>
+            </div>
+            <div class="tab-pane fade" id="list-html" role="tabpanel" aria-labelledby="list-settings-list">
+              <p>Personal Project Uses:</p>
+              <li>Personal portfolio website</li>
+              </p>
+              <p>Academic Project Uses:</p>
+              <li>McMaster iGem 2018 Team Wiki</li>
+              </p>
+            </div>
+            <div class="tab-pane fade" id="list-bash" role="tabpanel" aria-labelledby="list-settings-list">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container tools">
+        <h3 style="color: white">Tools</h3>
+      <ul class="list-group" style="padding-bottom: 2vh;">
+        <li class="list-group-item"><b style="color: black;">Git Version Control</b></li>
+        <li class="list-group-item"><b style="color: black;">Eclipse IDE</b></li>
+        <li class="list-group-item"><b style="color: black;">Google Firebase</b></li>
+        <li class="list-group-item"><b style="color: black;">TensorFlow Machine Learning</b></li>
+        <li class="list-group-item"><b style="color: black;">MySQL</b></li>
+        <li class="list-group-item"><b style="color: black;">UNIX Command Line</b></li> 
+        <li class="list-group-item" id="Experience"><b style="color: black;">Microsoft Office</b></li>       
+        </ul> 
+      </div>
+      
+    </section>
+  
+    <section class="Experience" id="experience">
+
+      <div class="container title">
+        <h2>Experience</h2>
+      </div>
+
+      <div class="container school">
+        <h3>City of Vaughan</h3>
+        <h3>Head Program Instructor</h3>
+        <h4>Sept 2018 - Present</h4>
+        <p>Created and taught a weekly lesson plan for a chess class of about 20 children. Also had to communicate updates and child progress in the class with parents. </p>
+        <br>
+        <h3>City of Vaughan</h3>
+        <h3>Camp Counselor</h3>
+        <h4>June 2018 - Present</h4>
+        <p id = "Projects">Collaborated with a team of 5 camp counselors
+          to plan and lead daily activities for up to 40
+          campers, as well as communicated with supervisors and parents
+          about any schedule changes or upcoming
+          events.</p>
+      </div>
+    </section>
+
+    <section class="Projects" id="projects">
+
+      <div class="container title">
+        <h2>Projects</h2>
+      </div>   
+
+      <div class="container cards">
+      
+      <div class="card" id="card1">
+        <img src="Images/map.png" class="card-img-top" alt="map of USA">
+        <h5 class="card-title" style="color: black;">US Housing Value App (Academic)</h5>
+        <div class="card-body">
+          <p class="card-text" style="color:black; font-size: 2vh;">Worked in a group of 5 people to create a Java app capable of analyzing data from a US housing price data set and air pollution data set. We used 
+            various graph, search and sort algorithms to help users find the optimal real estate location in the US and displayed the data in a GUI. The GUI and all features were developed using Java in Eclipse, with a private Github repo as our version control
+            sowtware. <br> <br>
+          </p>
+        </div>
+      </div>
+      
+      <div class="card" id="card2">
+        <a class="pic1" href="https://github.com/GilbertCherrie/NBAFantasyStats"><img src="Images/NBA.jpg" class="card-img-top" alt="arena"></a>
+        <h5 class="card-title" style="color: black;">NBA Player Efficiency Rating App (Personal)</h5>
+        <div class="card-body">
+          <p class="card-text" style="color:black; font-size: 2vh;"><a href="https://github.com/GilbertCherrie/NBAFantasyStats">Github Repo</a> <br> <a href=https://play.google.com/store/apps/details?id=com.fantasy.basketball.stats>Play Store App</a> <br>
+            Created an Android app and published it on the Google Play Store. This app allows users to quickly and easily access up to date and recent season stats for all active NBA players with various search and sort features. The data was compiled using
+            Python on Jupyter notebooks and an NBA API, then it was stored using Google Firestore. The app was developed using Java and Android Studio.
+          </p>
+        </div>
+      </div>
+      
+      <div class="card" id="card3">
+        <a class="pic1" href="https://github.com/GilbertCherrie/NFLStats"><img src="Images/NFL.jpg" class="card-img-top" alt="arena"></a>
+        <h5 class="card-title" style="color: black;">NFL Score Prediction Scripts (Personal)</h5>
+        <div class="card-body">
+          <p class="card-text" style="color:black; font-size: 2vh;"><a href="https://github.com/GilbertCherrie/NFLStats">Github Repo</a> <br>
+            Utilized Python scripts and the TensorFlow Machine Learning Library to predict NFL game scores. The NFL data was collected using an NFL API to collect training and testing data for the Machine Learning Algorithm.
+            The Machine Learning script predicts various stats for each game including yards, touchdowns and points to come up with a final score prediction. All game data and prediction data is saved on Google Firestore.
+          </p>
+        </div>
+      </div>
+      
+    </div>
+    </section>
+  </body>
 </html>

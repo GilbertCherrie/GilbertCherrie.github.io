@@ -1,16 +1,127 @@
-body, html {
-    background-color: lightblue;
-}
-
-h1 {
-    color: red;
-    font-size: 50px;
-}
-
-.blurb {
-    color: red;
+html {
+    scroll-behavior: smooth;
 }
 
 .main {
-    padding: 10vw;
+    height: 100vh;
+    background-image: url("Images/Chicago.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;   
+}
+
+.intro {
+    color: white;
+    font-size: 2.5vh;
+    padding-top: 5vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    text-align: center;
+    font-family: Arial;
+}
+.links {
+    text-align: center;
+}
+
+.name {    
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 8vh;
+}
+
+h2 {
+    font-size: 5vh;
+}
+
+h3 {
+    font-size: 3vh;
+}
+
+h4 {
+    font-size: 2vh;
+}
+
+.title {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    text-align: center;
+}
+
+
+.Education{
+    background-color: rgb(235, 235, 235);
+    padding-bottom: 5vh;
+}
+
+.school {
+    color: black;
+    width: 100vw;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+
+.extra{
+    color: black;
+    width: 100vw;
+    padding-top: 3vh;
+    text-align: center;
+}
+
+.Skills{
+    background-color: rgb(80, 80, 80);
+    color: white;
+    padding-bottom: 5vh;
+}
+
+.skillList{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 1.5vh;
+}
+
+.tools{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 10vh;
+    text-align: center;
+    font-size: 2vh;
+}
+
+.Experience{
+    background-color: rgb(235, 235, 235);
+    padding-bottom: 5vh;
+}
+
+.Projects{
+    background-color: rgb(80, 80, 80);
+    color: white;
+    padding-bottom: 5vh;
+}
+
+.cards{
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+#card1 {
+    width: 30vh;
+    display: inline-block;
+    margin-right: 10vh;
+    margin-bottom: 10vh;
+}
+
+#card2 {
+    width: 30vh;
+    display: inline-block;
+    margin-right: 10vh;
+}
+
+#card3 {
+    width: 30vh;
+    display: inline-block;
 }
