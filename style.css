@@ -60,14 +60,14 @@ h4 {
 
 .school {
     color: black;
-    width: 100vw;
+    width: 80vw;
     padding-bottom: 2vh;
     text-align: center;
 }
 
 .extra{
     color: black;
-    width: 100vw;
+    width: 80vw;
     padding-top: 3vh;
     text-align: center;
 }
@@ -81,7 +81,7 @@ h4 {
 .skillList{
     padding-left: 10vw;
     padding-right: 10vw;
-    font-size: 1.5vh;
+    font-size: 2vh;
 }
 
 .tools{
@@ -106,22 +106,17 @@ h4 {
 .cards{
     padding-left: 1vw;
     padding-right: 1vw;
+    margin-left: 25vw;
 }
 
 #card1 {
-    width: 30vh;
+    width: 35vh;
     display: inline-block;
-    margin-right: 10vh;
-    margin-bottom: 10vh;
+    margin-bottom: 10vw;
+    margin-right: 10vw;
 }
 
 #card2 {
-    width: 30vh;
-    display: inline-block;
-    margin-right: 10vh;
-}
-
-#card3 {
-    width: 30vh;
+    width: 35vh;
     display: inline-block;
 }
